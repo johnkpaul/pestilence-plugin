@@ -1,0 +1,25 @@
+{
+  
+  "name": "April Fools with Pestilence",
+  
+  "version": "0.0.1",
+  
+  "manifest_version": 2,
+  
+
+  "description": "Install this chrome extension and on april fools day, it will load up Pesilence.js http://restlessdesign.github.com/pestilence/",
+  
+  
+  "content_scripts": [
+{
+      "matches": ["http://*/*"],
+      "js": ["addPestilence.js"]
+    }
+  ],
+  
+  "permissions": [
+    "http://*/*"
+  ]
+  
+
+}
